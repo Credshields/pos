@@ -24,9 +24,9 @@ export default function Landing() {
 			h='100vh'>
 			<Hero />
 			<HeroInfographics />
-			<SpeakersSection />
-			<PartnerSection />
-			<ScheduleSection />
+			<SpeakersCS />
+			<PartnersCS />
+			<ScheduleCS />
 			<EventSection />
 			<PhotoReel />
 			<FooterSection />
