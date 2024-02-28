@@ -10,6 +10,7 @@ import { PhotoReel } from '../../components/Landing/PhotoReel';
 import { SpeakersSection } from '../../components/Landing/SpeakersSection';
 import { PartnerSection } from '../../components/Landing/PartnerSection';
 import { ScheduleSection } from '../../components/Landing/ScheduleSection';
+import { FooterSection } from '../../components/Landing/FooterSection';
 
 export default function Landing() {
 	return (
@@ -28,6 +29,7 @@ export default function Landing() {
 			<ScheduleSection />
 			<EventSection />
 			<PhotoReel />
+			<FooterSection />
 		</Container>
 	);
 }

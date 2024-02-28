@@ -9,10 +9,11 @@ import {
 	HStack,
 	Image,
 	Divider,
+	VStack,
 } from '@chakra-ui/react';
 
 import { Link } from 'react-router-dom';
-import { assetsUrl } from '../../helpers/values';
+import { assetsUrl, socialLink } from '../../helpers/values';
 
 export const Hero: React.FC = () => {
 	const [isDesktopView] = useMediaQuery('(min-width: 1000px)');
@@ -61,57 +62,101 @@ export const Hero: React.FC = () => {
 				h='100%'
 				zIndex={1}
 				backgroundColor={'#00000060'}
-				justifyContent={'space-between'}
-				direction={['column', 'column', 'row']}>
-				<Flex
-					direction={'column'}
-					justifyContent={'flex-start'}
-					alignItems={'flex-start'}
-					w='50%'
-					h='100%'
-					p={20}
-					background={'linear-gradient(to right, #000000, #00000000)'}>
+				justifyContent={'flex-start'}
+				direction={'column'}>
+				<HStack
+					width={'100%'}
+					height={'80px'}
+					px='100px'
+					backgroundColor={'#232323CC'}
+					justifyContent={'space-between'}
+					alignItems={'center'}>
+					<Image
+						height={'40px'}
+						width={'120px'}
+						src={`./pos_assets/logos/cs_logo_main.svg`}
+					/>
 					<HStack spacing={10}>
-						<Image
-							src={`./pos_assets/logos/pos_logo_main.svg`}
-							height='80px'
-							width='240px'
-						/>
-						<Divider orientation='vertical' />
-						<Image
-							src={`./pos_assets/logos/ss_logo_main.svg`}
-							height='80px'
-							width='240px'
-						/>
+						<Text color={'white'} cursor={'pointer'}>
+							About
+						</Text>
+						<Text color={'white'} cursor={'pointer'}>
+							Schedule
+						</Text>
+						<Text color={'white'} cursor={'pointer'}>
+							Speakers
+						</Text>
+						<Text color={'white'} cursor={'pointer'}>
+							Partners
+						</Text>
 					</HStack>
-					<Heading
-						fontFamily={'League Gothic'}
-						mt={10}
-						fontSize={'8xl'}
-						color={'white'}>
-						PROOF OF
-					</Heading>
-					<Heading
-						fontFamily={'League Gothic'}
-						fontSize={'8xl'}
-						color={'white'}>
-						SECURITY SUMMIT
-					</Heading>
-					<Heading
-						fontFamily={'League Gothic'}
-						fontSize={'7xl'}
-						color={'white'}>
-						2024 - DUBAI
-					</Heading>
-					<Button
-						bgColor={'#E4F3DF'}
-						borderRadius={30}
-						variant={'solid'}
-						px={10}
-						mt={5}
-						size={'lg'}>
-						RSVP
-					</Button>
+				</HStack>
+				<Flex
+					position='relative'
+					w='100%'
+					h='calc(100% - 80px)'
+					justifyContent={'space-between'}
+					direction={'row'}>
+					<Flex
+						direction={'column'}
+						justifyContent={'flex-start'}
+						alignItems={'flex-start'}
+						w='50%'
+						h='100%'
+						p={20}
+						background={'linear-gradient(to right, #000000, #00000000)'}>
+						<HStack spacing={10}>
+							<Image
+								src={`./pos_assets/logos/pos_logo_main.svg`}
+								height='80px'
+								width='240px'
+							/>
+							<Divider orientation='vertical' />
+							<Image
+								src={`./pos_assets/logos/ss_logo_main.svg`}
+								height='80px'
+								width='240px'
+							/>
+						</HStack>
+						<Heading
+							fontFamily={'League Gothic'}
+							mt={10}
+							fontSize={'8xl'}
+							color={'white'}>
+							PROOF OF
+						</Heading>
+						<Heading
+							fontFamily={'League Gothic'}
+							fontSize={'8xl'}
+							color={'white'}>
+							SECURITY SUMMIT
+						</Heading>
+						<Heading
+							fontFamily={'League Gothic'}
+							fontSize={'7xl'}
+							color={'white'}>
+							2024 - DUBAI
+						</Heading>
+						<Button
+							bgColor={'#E4F3DF'}
+							borderRadius={30}
+							variant={'solid'}
+							px={10}
+							mt={5}
+							size={'lg'}>
+							RSVP
+						</Button>
+					</Flex>
+					<VStack mr='50px' spacing={5} mt='20px'>
+						{socialLink.map((item) => (
+							<Image
+								onClick={() => window.open(item.socialUrl, '_blank')}
+								src={`./pos_assets/socials/header/${item.imgLink}.svg`}
+								height={'50px'}
+								width={'50px'}
+							/>
+						))}
+					</VStack>
 				</Flex>
 			</Flex>
 		</Flex>

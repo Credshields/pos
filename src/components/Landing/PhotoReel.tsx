@@ -22,7 +22,7 @@ export const PhotoReel: React.FC = () => {
 			height='fit-content'
 			flexDir={'column'}
 			justifyContent={'center'}
-			backgroundColor={'#1A211B'}
+			backgroundColor={'#031606'}
 			alignItems={'center'}
 			py={'300px'}>
 			<Marquee pauseOnHover={true}>
