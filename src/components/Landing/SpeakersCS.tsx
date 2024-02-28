@@ -14,6 +14,7 @@ import { CSSection } from './CSSection';
 export const SpeakersCS: React.FC = () => {
 	return (
 		<Flex
+			id='speakers'
 			width='100%'
 			height='fit-content'
 			justifyContent={'center'}

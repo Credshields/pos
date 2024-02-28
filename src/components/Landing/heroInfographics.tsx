@@ -35,6 +35,7 @@ export const HeroInfographics: React.FC = () => {
 
 	return (
 		<Flex
+			id='about'
 			width='100%'
 			height='fit-content'
 			justifyContent={'center'}

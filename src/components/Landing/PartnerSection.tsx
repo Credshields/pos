@@ -15,6 +15,7 @@ import { PartnerList } from './PartnerList';
 export const PartnerSection: React.FC = () => {
 	return (
 		<Flex
+			id='partners'
 			width='100%'
 			height='fit-content'
 			justifyContent={'center'}

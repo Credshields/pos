@@ -77,18 +77,26 @@ export const Hero: React.FC = () => {
 						src={`./pos_assets/logos/cs_logo_main.svg`}
 					/>
 					<HStack spacing={10}>
-						<Text color={'white'} cursor={'pointer'}>
-							About
-						</Text>
-						<Text color={'white'} cursor={'pointer'}>
-							Schedule
-						</Text>
-						<Text color={'white'} cursor={'pointer'}>
-							Speakers
-						</Text>
-						<Text color={'white'} cursor={'pointer'}>
-							Partners
-						</Text>
+						<Link to='#about'>
+							<Text color={'white'} cursor={'pointer'}>
+								About
+							</Text>
+						</Link>
+						<Link to='#schedule'>
+							<Text color={'white'} cursor={'pointer'}>
+								Schedule
+							</Text>
+						</Link>
+						<Link to='#speakers'>
+							<Text color={'white'} cursor={'pointer'}>
+								Speakers
+							</Text>
+						</Link>
+						<Link to='#partners'>
+							<Text color={'white'} cursor={'pointer'}>
+								Partners
+							</Text>
+						</Link>
 					</HStack>
 				</HStack>
 				<Flex

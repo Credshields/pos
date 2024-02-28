@@ -16,6 +16,7 @@ import { PanelSlider } from './PanelSlider';
 export const SpeakersSection: React.FC = () => {
 	return (
 		<Flex
+			id='speakers'
 			width='100%'
 			height='fit-content'
 			justifyContent={'center'}

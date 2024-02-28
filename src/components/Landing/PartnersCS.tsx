@@ -14,6 +14,7 @@ import { CSSection } from './CSSection';
 export const PartnersCS: React.FC = () => {
 	return (
 		<Flex
+			id='partners'
 			width='100%'
 			height='fit-content'
 			justifyContent={'center'}

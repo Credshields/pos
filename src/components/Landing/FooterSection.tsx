@@ -13,6 +13,7 @@ import {
 import { SectionHeader } from './SectionHeader';
 import { CSSection } from './CSSection';
 import { socialLink } from '../../helpers/values';
+import { Link } from 'react-router-dom';
 
 export const FooterSection: React.FC = () => {
 	return (
@@ -95,24 +96,32 @@ export const FooterSection: React.FC = () => {
 						spacing={3}
 						justifyContent={'flex-start'}
 						alignItems={'flex-start'}>
-						<Text fontSize={'sm'} cursor={'pointer'}>
-							About
-						</Text>
-						<Text fontSize={'sm'} cursor={'pointer'}>
-							Schedule
-						</Text>
-						<Text fontSize={'sm'} cursor={'pointer'}>
-							Speakers
-						</Text>
+						<Link to='#about'>
+							<Text fontSize={'sm'} cursor={'pointer'}>
+								About
+							</Text>
+						</Link>
+						<Link to='#schedule'>
+							<Text fontSize={'sm'} cursor={'pointer'}>
+								Schedule
+							</Text>
+						</Link>
+						<Link to='#speakers'>
+							<Text fontSize={'sm'} cursor={'pointer'}>
+								Speakers
+							</Text>
+						</Link>
 					</VStack>
 					<VStack
 						w='20%'
 						spacing={3}
 						justifyContent={'flex-start'}
 						alignItems={'flex-start'}>
-						<Text fontSize={'sm'} cursor={'pointer'}>
-							Partners
-						</Text>
+						<Link to='#partners'>
+							<Text fontSize={'sm'} cursor={'pointer'}>
+								Partners
+							</Text>
+						</Link>
 						<Text fontSize={'sm'} cursor={'pointer'}>
 							Terms
 						</Text>
