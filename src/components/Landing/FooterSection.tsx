@@ -2,17 +2,12 @@ import React, { useEffect, useState, useRef } from 'react';
 import {
 	Divider,
 	Flex,
-	Grid,
-	GridItem,
 	HStack,
 	Image,
 	Stack,
 	Text,
 	VStack,
-	useMediaQuery,
 } from '@chakra-ui/react';
-import { SectionHeader } from './SectionHeader';
-import { CSSection } from './CSSection';
 import { assetsUrl, socialLink } from '../../helpers/values';
 import { Link } from 'react-router-dom';
 
@@ -42,9 +37,18 @@ export const FooterSection: React.FC = () => {
 							<Text fontSize={'2xl'}>VISION</Text>
 						</HStack>
 						<Text fontSize={'md'} maxW={'500px'} fontWeight={300}>
-							Proof of Security is an initiative by SolidityScan Designed for
-							Devs, Security Researchers, and to all who aspire to enter into
-							web3 security.
+							Proof of Security is an initiative by{' '}
+							<span
+								onClick={() =>
+									window.open('https://solidityscan.com/', '_blank')
+								}
+								style={{
+									textDecoration: 'underline',
+								}}>
+								SolidityScan
+							</span>{' '}
+							Designed for Devs, Security Researchers, and to all who aspire to
+							enter into web3 security.
 						</Text>
 					</VStack>
 					<VStack
@@ -61,9 +65,18 @@ export const FooterSection: React.FC = () => {
 							<Text fontSize={'2xl'}>MISSION</Text>
 						</HStack>
 						<Text fontSize={'md'} maxW={'500px'} fontWeight={300}>
-							Proof of Security is a brand by SolidityScan that includes various
-							activities like CTFs, Hackathons, Workshops, Meet-ups, Summit,
-							etc.
+							Proof of Security is a brand by{' '}
+							<span
+								onClick={() =>
+									window.open('https://solidityscan.com/', '_blank')
+								}
+								style={{
+									textDecoration: 'underline',
+								}}>
+								SolidityScan
+							</span>{' '}
+							that includes various activities like CTFs, Hackathons, Workshops,
+							Meet-ups, Summit, etc.
 						</Text>
 					</VStack>
 				</Stack>
@@ -79,12 +92,20 @@ export const FooterSection: React.FC = () => {
 						alignItems={'flex-start'}>
 						<HStack>
 							<Image
+								onClick={() =>
+									window.open('https://credshields.com/', '_blank')
+								}
+								cursor='pointer'
 								src={`${assetsUrl}/logos/cs_logo_main.svg`}
 								height={'40px'}
 								width={'120px'}
 							/>{' '}
 							<Divider orientation='vertical' height={'60px'} />
 							<Image
+								onClick={() =>
+									window.open('https://solidityscan.com/', '_blank')
+								}
+								cursor='pointer'
 								src={`${assetsUrl}/logos/ss_logo_main.svg`}
 								height={'50px'}
 								width={'200px'}

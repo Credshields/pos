@@ -244,7 +244,7 @@ export default function Landing() {
 				justifyContent={'center'}
 				backgroundColor={'#031606'}
 				alignItems={'center'}>
-				<SpeakersSection />
+				<SpeakersCS />
 			</Flex>
 			<Flex
 				id='partners'
@@ -253,7 +253,7 @@ export default function Landing() {
 				justifyContent={'center'}
 				backgroundColor={'#1A211B'}
 				alignItems={'center'}>
-				<PartnerSection />
+				<PartnersCS />
 			</Flex>
 			<Flex
 				id='schedule'
@@ -262,7 +262,7 @@ export default function Landing() {
 				justifyContent={'center'}
 				backgroundColor={'#031606'}
 				alignItems={'center'}>
-				<ScheduleSection />
+				<ScheduleCS />
 			</Flex>
 			<EventSection />
 			<PhotoReel />

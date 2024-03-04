@@ -4,14 +4,14 @@ export const assetsUrl =
 export const socialLink = [
 	{
 		imgLink: 'twitter',
-		socialUrl: '',
+		socialUrl: 'https://twitter.com/proofofsecurity',
 	},
 	{
 		imgLink: 'telegram',
-		socialUrl: '',
+		socialUrl: 'https://t.me/solidityscan',
 	},
 	{
 		imgLink: 'linkedin',
-		socialUrl: '',
+		socialUrl: 'https://www.linkedin.com/company/solidity-scan/',
 	},
 ];

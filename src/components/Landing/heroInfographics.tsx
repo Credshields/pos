@@ -24,7 +24,7 @@ export const HeroInfographics: React.FC = () => {
 			text: 'Explore cutting-edge cybersecurity strategies and best practices for protecting your digital assets. Learn proactive measures to fortify your organization against growing cyber threats.',
 		},
 		{
-			heading: 'Enhancing Security',
+			heading: 'Compliance',
 			text: 'Discover practical approaches to meet and exceed compliance expectations, streamline processes, and foster a culture of accountability.',
 		},
 		{

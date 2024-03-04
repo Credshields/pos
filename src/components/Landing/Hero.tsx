@@ -39,6 +39,8 @@ export const Hero: React.FC = () => {
 					alignItems={'flex-end'}>
 					<HStack spacing={10} display={['none', 'none', 'flex']}>
 						<Image
+							onClick={() => window.open('https://solidityscan.com/', '_blank')}
+							cursor='pointer'
 							src={`${assetsUrl}/logos/pos_logo_main.svg`}
 							height='80px'
 							width='240px'
@@ -53,6 +55,7 @@ export const Hero: React.FC = () => {
 					<VStack display={['flex', 'flex', 'none']} spacing={[2, 3, 5, 5]}>
 						{socialLink.map((item) => (
 							<Image
+								cursor={'pointer'}
 								onClick={() => window.open(item.socialUrl, '_blank')}
 								src={`${assetsUrl}/socials/header/${item.imgLink}.svg`}
 								height={'30px'}
