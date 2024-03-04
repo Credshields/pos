@@ -1,6 +1,6 @@
 {
   "homepage": "https://credshields.github.io/pos",
-  "name": "pos-website",
+  "name": "pos",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
