@@ -1,7 +1,7 @@
 {
   "name": "pos",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://credshields.github.io/pos",
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
