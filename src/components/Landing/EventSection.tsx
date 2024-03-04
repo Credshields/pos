@@ -54,12 +54,18 @@ export const EventSection: React.FC = () => {
 							height={['30px', '40px', '50px']}
 							width={['30px', '40px', '50px']}
 							mr={[5, 7, 10]}
+							onClick={() =>
+								window.open(
+									'https://youtu.be/p8nbUYY9PBU?si=cqrCiNb81Rg9D39P',
+									'_blank'
+								)
+							}
 						/>
 						<Text
 							fontSize={['md', 'lg', 'xl']}
 							color={'#FFFFFF'}
 							fontWeight={600}>
-							Proof of Security India
+							Proof of Security Summit’23 - India
 						</Text>
 					</HStack>
 				</Flex>
