@@ -6,13 +6,14 @@ import {
 	GridItem,
 	HStack,
 	Image,
+	Stack,
 	Text,
 	VStack,
 	useMediaQuery,
 } from '@chakra-ui/react';
 import { SectionHeader } from './SectionHeader';
 import { CSSection } from './CSSection';
-import { socialLink } from '../../helpers/values';
+import { assetsUrl, socialLink } from '../../helpers/values';
 import { Link } from 'react-router-dom';
 
 export const FooterSection: React.FC = () => {
@@ -26,15 +27,15 @@ export const FooterSection: React.FC = () => {
 			color={'white'}
 			py='50px'>
 			<VStack w='90%' maxW='1400px' alignItems={'center'} spacing={10}>
-				<HStack w='100%'>
+				<Stack spacing={10} flexDir={['column', 'column', 'row']} w='100%'>
 					<VStack
-						w='50%'
+						w={['100%', '100%', '50%']}
 						spacing={5}
 						justifyContent={'flex-start'}
 						alignItems={'flex-start'}>
 						<HStack spacing={7}>
 							<Image
-								src={`./pos_assets/icons/vision.svg`}
+								src={`${assetsUrl}/icons/vision.svg`}
 								height={'50px'}
 								width={'50px'}
 							/>
@@ -47,13 +48,13 @@ export const FooterSection: React.FC = () => {
 						</Text>
 					</VStack>
 					<VStack
-						w='50%'
+						w={['100%', '100%', '50%']}
 						spacing={5}
 						justifyContent={'flex-start'}
 						alignItems={'flex-start'}>
 						<HStack spacing={7}>
 							<Image
-								src={`./pos_assets/icons/mission.svg`}
+								src={`${assetsUrl}/icons/mission.svg`}
 								height={'50px'}
 								width={'50px'}
 							/>
@@ -65,72 +66,78 @@ export const FooterSection: React.FC = () => {
 							etc.
 						</Text>
 					</VStack>
-				</HStack>
-				<HStack w='100%'>
+				</Stack>
+				<Stack
+					spacing={[10, 10, 0]}
+					flexDir={['column', 'column', 'row']}
+					alignItems={['flex-start']}
+					w='100%'>
 					<VStack
-						w='40%'
+						w={['100%', '100%', '50%', '40%']}
 						spacing={5}
 						justifyContent={'flex-start'}
 						alignItems={'flex-start'}>
 						<HStack>
 							<Image
-								src={`./pos_assets/logos/cs_logo_main.svg`}
+								src={`${assetsUrl}/logos/cs_logo_main.svg`}
 								height={'40px'}
 								width={'120px'}
 							/>{' '}
 							<Divider orientation='vertical' height={'60px'} />
 							<Image
-								src={`./pos_assets/logos/ss_logo_main.svg`}
+								src={`${assetsUrl}/logos/ss_logo_main.svg`}
 								height={'50px'}
 								width={'200px'}
 							/>
 						</HStack>
 						<Image
-							src={`./pos_assets/logos/pos_logo_main.svg`}
+							src={`${assetsUrl}/logos/pos_logo_main.svg`}
 							height={'70px'}
 							width={'210px'}
 						/>
 					</VStack>
+					<HStack w={['100%', '100%', '30%', '40%']}>
+						<VStack
+							w={'50%'}
+							spacing={3}
+							justifyContent={'flex-start'}
+							alignItems={'flex-start'}>
+							<Link to='#about'>
+								<Text fontSize={'sm'} cursor={'pointer'}>
+									About
+								</Text>
+							</Link>
+							<Link to='#schedule'>
+								<Text fontSize={'sm'} cursor={'pointer'}>
+									Schedule
+								</Text>
+							</Link>
+							<Link to='#speakers'>
+								<Text fontSize={'sm'} cursor={'pointer'}>
+									Speakers
+								</Text>
+							</Link>
+						</VStack>
+						<VStack
+							w='50%'
+							spacing={3}
+							justifyContent={'flex-start'}
+							alignItems={'flex-start'}>
+							<Link to='#partners'>
+								<Text fontSize={'sm'} cursor={'pointer'}>
+									Partners
+								</Text>
+							</Link>
+							<Text fontSize={'sm'} cursor={'pointer'}>
+								Terms
+							</Text>
+							<Text fontSize={'sm'} cursor={'pointer'}>
+								Privacy
+							</Text>
+						</VStack>
+					</HStack>
 					<VStack
-						w='20%'
-						spacing={3}
-						justifyContent={'flex-start'}
-						alignItems={'flex-start'}>
-						<Link to='#about'>
-							<Text fontSize={'sm'} cursor={'pointer'}>
-								About
-							</Text>
-						</Link>
-						<Link to='#schedule'>
-							<Text fontSize={'sm'} cursor={'pointer'}>
-								Schedule
-							</Text>
-						</Link>
-						<Link to='#speakers'>
-							<Text fontSize={'sm'} cursor={'pointer'}>
-								Speakers
-							</Text>
-						</Link>
-					</VStack>
-					<VStack
-						w='20%'
-						spacing={3}
-						justifyContent={'flex-start'}
-						alignItems={'flex-start'}>
-						<Link to='#partners'>
-							<Text fontSize={'sm'} cursor={'pointer'}>
-								Partners
-							</Text>
-						</Link>
-						<Text fontSize={'sm'} cursor={'pointer'}>
-							Terms
-						</Text>
-						<Text fontSize={'sm'} cursor={'pointer'}>
-							Privacy
-						</Text>
-					</VStack>
-					<VStack
-						w='20%'
+						w={['100%', '100%', '15%', '20%']}
 						spacing={5}
 						justifyContent={'flex-start'}
 						alignItems={'flex-start'}>
@@ -139,14 +146,17 @@ export const FooterSection: React.FC = () => {
 							{socialLink.map((item) => (
 								<Image
 									onClick={() => window.open(item.socialUrl, '_blank')}
-									src={`./pos_assets/socials/footer/${item.imgLink}.svg`}
+									src={`${assetsUrl}/socials/footer/${item.imgLink}.svg`}
 									height={'30px'}
 									width={'30px'}
 								/>
 							))}
 						</HStack>
 					</VStack>
-				</HStack>
+				</Stack>
+				<Text>
+					© Proof Of Security 2024 By SolidityScan. All Rights Reserved
+				</Text>
 			</VStack>
 		</Flex>
 	);

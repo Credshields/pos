@@ -8,6 +8,7 @@ import {
 	VStack,
 	useMediaQuery,
 } from '@chakra-ui/react';
+import { assetsUrl } from '../../helpers/values';
 
 export const SpeakerList: React.FC = () => {
 	const data: {
@@ -95,7 +96,7 @@ export const SpeakerList: React.FC = () => {
 					alignItems={'flex-start'}
 					textAlign={'left'}>
 					<Flex
-						backgroundImage={`url(./pos_assets/speakers/${item.profilePicLink}.png)`}
+						backgroundImage={`url(${assetsUrl}/speakers/${item.profilePicLink}.png)`}
 						direction={'row'}
 						backgroundRepeat={'no-repeat'}
 						backgroundSize={'contain'}
@@ -113,7 +114,7 @@ export const SpeakerList: React.FC = () => {
 							<Image
 								height={'60px'}
 								width={'60px'}
-								src={`./pos_assets/speakers/${item.companyLogoLink}.svg`}
+								src={`${assetsUrl}/speakers/${item.companyLogoLink}.svg`}
 							/>
 						</Flex>
 					</Flex>

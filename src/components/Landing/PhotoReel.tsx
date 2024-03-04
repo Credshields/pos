@@ -11,10 +11,31 @@ import {
 import { SectionHeader } from './SectionHeader';
 import { CSSection } from './CSSection';
 import Marquee from 'react-fast-marquee';
+import { assetsUrl } from '../../helpers/values';
 
 export const PhotoReel: React.FC = () => {
-	const imgLine1 = ['photo1', 'photo2', 'photo1', 'photo2'];
-	const imgLine2 = ['photo4', 'photo5', 'photo4', 'photo5'];
+	const imgLine1 = [
+		'pic1',
+		'pic2',
+		'pic3',
+		'pic4',
+		'pic5',
+		'pic6',
+		'pic7',
+		'pic8',
+		'pic9',
+	];
+	const imgLine2 = [
+		'pic10',
+		'pic11',
+		'pic12',
+		'pic13',
+		'pic14',
+		'pic15',
+		'pic16',
+		'pic17',
+		'pic18',
+	];
 
 	return (
 		<Flex
@@ -24,15 +45,17 @@ export const PhotoReel: React.FC = () => {
 			justifyContent={'center'}
 			backgroundColor={'#031606'}
 			alignItems={'center'}
-			py={'300px'}>
+			py={['100px', '180px', '300px']}>
 			<Marquee pauseOnHover={true}>
 				{imgLine1.map((url) => (
 					<Image
 						mr={10}
 						borderRadius={20}
-						width={'530px'}
-						height={'300px'}
-						src={`./pos_assets/photo_reels/${url}.png`}
+						maxW={'530px'}
+						width={['70vw', '70vw', '530px']}
+						maxH={'300px'}
+						height={['45vw', '45vw', '300px']}
+						src={`${assetsUrl}/photo_reels/${url}.JPG`}
 					/>
 				))}
 			</Marquee>
@@ -46,9 +69,11 @@ export const PhotoReel: React.FC = () => {
 					<Image
 						mr={10}
 						borderRadius={20}
-						width={'530px'}
-						height={'300px'}
-						src={`./pos_assets/photo_reels/${url}.png`}
+						maxW={'530px'}
+						width={['70vw', '70vw', '530px']}
+						maxH={'300px'}
+						height={['45vw', '45vw', '300px']}
+						src={`${assetsUrl}/photo_reels/${url}.JPG`}
 					/>
 				))}
 			</Marquee>

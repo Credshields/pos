@@ -20,16 +20,16 @@ export const HeroInfographics: React.FC = () => {
 		text: string;
 	}[] = [
 		{
-			heading: 'Proof of Security Summit',
-			text: 'The Proof of Security Summit aims to bring together leading experts, developers, researchers, and enthusiasts in the blockchain and Web3Security space.',
+			heading: 'Security',
+			text: 'Explore cutting-edge cybersecurity strategies and best practices for protecting your digital assets. Learn proactive measures to fortify your organization against growing cyber threats.',
 		},
 		{
 			heading: 'Enhancing Security',
-			text: 'This event will focus on advancing security practices in fostering collaboration and sharing best practices.',
+			text: 'Discover practical approaches to meet and exceed compliance expectations, streamline processes, and foster a culture of accountability.',
 		},
 		{
-			heading: 'Integrity and Fortification',
-			text: `The summit's primary goal is to ensure the integrity and fortification of blockchain applications through collective efforts and knowledge exchange.`,
+			heading: 'Tokenization',
+			text: `Stay ahead in the world of Real World Asset Tokenization, unlocking insights from experts on tailored strategies. Equip your organization to navigate tokenization frameworks and position for success in the dynamic landscape of asset digitization.`,
 		},
 	];
 
@@ -42,15 +42,19 @@ export const HeroInfographics: React.FC = () => {
 			backgroundColor={'#031606'}
 			alignItems={'center'}>
 			<Flex
-				justifyContent={'space-between'}
+				justifyContent={['flex-start', 'flex-start', 'space-between']}
 				width={'95%'}
 				maxW={'1400px'}
 				py={20}
+				rowGap={'30px'}
+				flexDir={['column', 'column', 'row']}
+				alignItems={'center'}
 				height={'fit-content'}>
 				{data.map((item) => (
 					<VStack
-						width={'30%'}
+						width={['90%', '90%', '30%']}
 						maxW='400px'
+						height={['fit-content', '300px', '420px', '250px']}
 						alignItems={'flex-start'}
 						textAlign={'left'}
 						backgroundColor={'#262525'}

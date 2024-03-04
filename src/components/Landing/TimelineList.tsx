@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Text } from '@chakra-ui/react';
+import { Box, Flex, Text, useMediaQuery } from '@chakra-ui/react';
 import 'react-vertical-timeline-component/style.min.css';
 import './timeline.css';
 
@@ -105,9 +105,14 @@ export const TimelineList: React.FC = () => {
 };
 
 const NumericIcon: React.FC<{ number: string }> = ({ number }) => {
+	const [isDesktopView] = useMediaQuery('(min-width: 1170px)');
 	return (
-		<Flex w='60px' h='60px' justifyContent={'center'} alignItems={'center'}>
-			<Text fontSize={'2xl'} color='#000000'>
+		<Flex
+			w={isDesktopView ? '60px' : '40px'}
+			h={isDesktopView ? '60px' : '40px'}
+			justifyContent={'center'}
+			alignItems={'center'}>
+			<Text fontSize={isDesktopView ? '2xl' : 'xl'} color='#000000'>
 				{number}
 			</Text>
 		</Flex>

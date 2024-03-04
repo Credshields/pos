@@ -64,3 +64,34 @@ text-align: left !important;
 color: #A7A7A7 !important;
 }
 
+
+@media only screen and (max-width: 1170px) {
+    .vertical-timeline-element-title {
+        font-size: 22px !important;
+        line-height: 28px !important;    
+    }
+    
+    .vertical-timeline-element-subtitle {
+        font-size: 16px !important;
+        line-height: 22px !important;
+    }
+
+    .vertical-timeline-element-icon {
+        left: 0px !important
+    }
+    
+    .timeline-container::before {
+        left: 20px !important
+    }
+
+    .vertical-timeline-element-content { 
+        top: -20px;
+    }
+
+    .vertical-timeline-element-date {
+        font-size: 18px !important;
+        line-height: 36px !important;
+        
+    
+    }
+  }

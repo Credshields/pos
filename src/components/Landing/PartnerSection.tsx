@@ -14,21 +14,12 @@ import { PartnerList } from './PartnerList';
 
 export const PartnerSection: React.FC = () => {
 	return (
-		<Flex
-			id='partners'
-			width='100%'
-			height='fit-content'
-			justifyContent={'center'}
-			backgroundColor={'#1A211B'}
-			alignItems={'center'}
-			py={20}>
-			<VStack w='95%' maxW='1600px' alignItems={'center'}>
-				<SectionHeader
-					heading='PARTNERS'
-					subText='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
-				/>
-				<PartnerList />
-			</VStack>
-		</Flex>
+		<VStack w='95%' maxW='1600px' alignItems={'center'}>
+			<SectionHeader
+				heading='PARTNERS'
+				subText='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+			/>
+			<PartnerList />
+		</VStack>
 	);
 };

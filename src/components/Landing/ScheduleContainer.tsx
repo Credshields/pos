@@ -25,7 +25,7 @@ export const ScheduleContainer: React.FC = () => {
 			height='fit-content'
 			justifyContent={'center'}
 			alignItems={'center'}
-			px={20}>
+			px={[5, 5, 10, 20]}>
 			<Tabs w='100%' height='fit-content'>
 				<TabList color={'white'} borderBottom={'4px solid #4E4E4E'} w='100%'>
 					<Tab

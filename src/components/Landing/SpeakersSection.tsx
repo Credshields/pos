@@ -15,22 +15,13 @@ import { PanelSlider } from './PanelSlider';
 
 export const SpeakersSection: React.FC = () => {
 	return (
-		<Flex
-			id='speakers'
-			width='100%'
-			height='fit-content'
-			justifyContent={'center'}
-			backgroundColor={'#031606'}
-			alignItems={'center'}
-			py={20}>
-			<VStack w='95%' maxW='1600px' alignItems={'center'}>
-				<SectionHeader
-					heading='SPEAKERS'
-					subText='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
-				/>
-				<SpeakerList />
-				<PanelSlider />
-			</VStack>
-		</Flex>
+		<VStack w='95%' maxW='1800px' alignItems={'center'}>
+			<SectionHeader
+				heading='SPEAKERS'
+				subText='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+			/>
+			<SpeakerList />
+			<PanelSlider />
+		</VStack>
 	);
 };

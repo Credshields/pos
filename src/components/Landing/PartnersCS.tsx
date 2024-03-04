@@ -13,20 +13,12 @@ import { CSSection } from './CSSection';
 
 export const PartnersCS: React.FC = () => {
 	return (
-		<Flex
-			id='partners'
-			width='100%'
-			height='fit-content'
-			justifyContent={'center'}
-			backgroundColor={'#1A211B'}
-			alignItems={'center'}>
-			<VStack w='95%' maxW='1600px' alignItems={'center'}>
-				<SectionHeader
-					heading='PARTNERS'
-					subText='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
-				/>
-				<CSSection iconUrl='cs_partners' />
-			</VStack>
-		</Flex>
+		<VStack w='95%' maxW='1600px' alignItems={'center'}>
+			<SectionHeader
+				heading='PARTNERS'
+				subText='Meet Our Partners: Collaborators Driving Innovation Together'
+			/>
+			<CSSection iconUrl='cs_partners' />
+		</VStack>
 	);
 };

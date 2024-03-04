@@ -10,6 +10,7 @@ import {
 	VStack,
 	useMediaQuery,
 } from '@chakra-ui/react';
+import { assetsUrl } from '../../helpers/values';
 
 export const CSSection: React.FC<{ iconUrl: string }> = ({ iconUrl }) => {
 	return (
@@ -21,21 +22,25 @@ export const CSSection: React.FC<{ iconUrl: string }> = ({ iconUrl }) => {
 			p={20}
 			pt={5}>
 			<HStack w='100%' alignItems={'center'} justifyContent={'center'}>
-				<VStack w='fit-content'>
+				<VStack w='fit-content' spacing={0}>
 					<Heading
 						fontFamily={'League Gothic'}
-						fontSize={'6xl'}
+						fontSize={['5xl', '5xl', '6xl']}
 						color={'#E4F3DF'}>
 						Announcing
 					</Heading>
 					<Heading
 						fontFamily={'League Gothic'}
-						fontSize={'6xl'}
+						fontSize={['5xl', '5xl', '6xl']}
 						color={'#E4F3DF'}>
 						Soon
 					</Heading>
 				</VStack>
-				<Image src={`./pos_assets/icons/cs_icons/${iconUrl}.svg`} />
+				<Image
+					height={'100px'}
+					width={'100px'}
+					src={`${assetsUrl}/icons/cs_icons/${iconUrl}.svg`}
+				/>
 			</HStack>
 		</Flex>
 	);
