@@ -7,6 +7,17 @@ import {
 	useBreakpointValue,
 	useMediaQuery,
 	Text,
+	Button,
+	Drawer,
+	DrawerBody,
+	DrawerCloseButton,
+	DrawerContent,
+	DrawerFooter,
+	DrawerHeader,
+	DrawerOverlay,
+	Input,
+	useDisclosure,
+	VStack,
 } from '@chakra-ui/react';
 import React, { useEffect, lazy, Suspense } from 'react';
 import { Hero } from '../../components/Landing/Hero';
@@ -40,6 +51,14 @@ export default function Landing() {
 			sm: 'landing_video_tablet',
 			md: 'landing_video_desktop',
 		}) || 'landing_video_desktop';
+
+	const scrollTo = (elementId: string) => {
+		const element = document.getElementById(elementId);
+		element?.scrollIntoView({
+			behavior: 'smooth',
+		});
+	};
+	const { isOpen, onOpen, onClose } = useDisclosure();
 
 	return (
 		<Container
@@ -110,21 +129,98 @@ export default function Landing() {
 							display={['flex', 'flex', 'none']}
 							color={'white'}
 							fontSize={'xl'}
+							onClick={onOpen}
 						/>
+						<Drawer isOpen={isOpen} placement='right' onClose={onClose}>
+							<DrawerOverlay />
+							<DrawerContent bgColor={'#1A211B'}>
+								<DrawerCloseButton />
+
+								<DrawerBody p={10} bgColor={'#1A211B'}>
+									<VStack spacing={5} w='100%'>
+										<Image
+											mb='30px'
+											height={'40px'}
+											width={'120px'}
+											src={`${assetsUrl}/logos/cs_logo_main.svg`}
+										/>
+										<Text
+											onClick={() => {
+												scrollTo('about');
+											}}
+											color={'white'}
+											fontSize={'xl'}
+											cursor={'pointer'}>
+											About
+										</Text>
+
+										<Text
+											onClick={() => {
+												scrollTo('schedule');
+											}}
+											color={'white'}
+											fontSize={'xl'}
+											cursor={'pointer'}>
+											Schedule
+										</Text>
+
+										<Text
+											onClick={() => {
+												scrollTo('speakers');
+											}}
+											color={'white'}
+											fontSize={'xl'}
+											cursor={'pointer'}>
+											Speakers
+										</Text>
+
+										<Text
+											onClick={() => {
+												scrollTo('partners');
+											}}
+											color={'white'}
+											fontSize={'xl'}
+											cursor={'pointer'}>
+											Partners
+										</Text>
+									</VStack>
+								</DrawerBody>
+							</DrawerContent>
+						</Drawer>
 						<HStack spacing={10} display={['none', 'none', 'flex']}>
-							<Text color={'white'} cursor={'pointer'}>
+							<Text
+								onClick={() => {
+									scrollTo('about');
+								}}
+								color={'white'}
+								cursor={'pointer'}>
 								About
 							</Text>
 
-							<Text color={'white'} cursor={'pointer'}>
+							<Text
+								onClick={() => {
+									scrollTo('schedule');
+								}}
+								color={'white'}
+								cursor={'pointer'}>
 								Schedule
 							</Text>
 
-							<Text color={'white'} cursor={'pointer'}>
+							<Text
+								onClick={() => {
+									scrollTo('speakers');
+								}}
+								color={'white'}
+								cursor={'pointer'}>
 								Speakers
 							</Text>
 
-							<Text color={'white'} cursor={'pointer'}>
+							<Text
+								onClick={() => {
+									scrollTo('partners');
+								}}
+								color={'white'}
+								cursor={'pointer'}>
 								Partners
 							</Text>
 						</HStack>

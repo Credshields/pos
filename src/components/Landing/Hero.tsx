@@ -18,7 +18,6 @@ import { Link } from 'react-router-dom';
 import { assetsUrl, socialLink } from '../../helpers/values';
 
 export const Hero: React.FC = () => {
-	
 	return (
 		<Flex
 			position='relative'
@@ -115,6 +114,7 @@ export const Hero: React.FC = () => {
 					display={['none', 'none', 'block']}
 					bgColor={'#E4F3DF'}
 					borderRadius={30}
+					onClick={() => window.open('https://lu.ma/ProofofsecurityDubai')}
 					variant={'solid'}
 					px={10}
 					mt={5}
