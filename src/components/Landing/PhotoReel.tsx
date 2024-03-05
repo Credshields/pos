@@ -31,7 +31,6 @@ export const PhotoReel: React.FC = () => {
 		'pic12',
 		'pic13',
 		'pic5',
-
 		'pic15',
 		'pic16',
 		'pic17',

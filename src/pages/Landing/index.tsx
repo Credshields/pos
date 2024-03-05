@@ -47,8 +47,8 @@ export default function Landing() {
 
 	let videoUrl =
 		useBreakpointValue({
-			base: 'landing_video_mobile',
-			sm: 'landing_video_tablet',
+			base: 'mobile_video',
+			sm: 'tablet_video',
 			md: 'main_video',
 		}) || 'main_video';
 
@@ -94,15 +94,12 @@ export default function Landing() {
 					<video
 						style={{
 							width: '100vw',
-							height: '700px',
+							height: '100%',
 						}}
 						autoPlay
 						muted
 						loop>
-						<source
-							src={`${assetsUrl}/video/${videoUrl}.mp4`}
-							type='video/mp4'
-						/>
+						<source src={`${videoUrl}.mp4`} type='video/mp4' />
 					</video>
 				</Box>
 				<Flex
