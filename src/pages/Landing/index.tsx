@@ -49,8 +49,8 @@ export default function Landing() {
 		useBreakpointValue({
 			base: 'landing_video_mobile',
 			sm: 'landing_video_tablet',
-			md: 'landing_video_desktop',
-		}) || 'landing_video_desktop';
+			md: 'main_video',
+		}) || 'main_video';
 
 	const scrollTo = (elementId: string) => {
 		const element = document.getElementById(elementId);
