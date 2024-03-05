@@ -19,18 +19,19 @@ export const PhotoReel: React.FC = () => {
 		'pic2',
 		'pic3',
 		'pic4',
-		'pic5',
-		'pic6',
+		'pic14',
 		'pic7',
 		'pic8',
 		'pic9',
+		'pic6',
 	];
 	const imgLine2 = [
 		'pic10',
 		'pic11',
 		'pic12',
 		'pic13',
-		'pic14',
+		'pic5',
+
 		'pic15',
 		'pic16',
 		'pic17',

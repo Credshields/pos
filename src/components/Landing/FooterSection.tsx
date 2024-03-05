@@ -92,14 +92,11 @@ export const FooterSection: React.FC = () => {
 						alignItems={'flex-start'}>
 						<HStack>
 							<Image
-								onClick={() =>
-									window.open('https://credshields.com/', '_blank')
-								}
-								cursor='pointer'
-								src={`${assetsUrl}/logos/cs_logo_main.svg`}
-								height={'40px'}
-								width={'120px'}
-							/>{' '}
+								src={`${assetsUrl}/logos/pos_logo_main.svg`}
+								height={'50px'}
+								width={'160px'}
+							/>
+
 							<Divider orientation='vertical' height={'60px'} />
 							<Image
 								onClick={() =>
@@ -112,10 +109,12 @@ export const FooterSection: React.FC = () => {
 							/>
 						</HStack>
 						<Image
-							src={`${assetsUrl}/logos/pos_logo_main.svg`}
-							height={'70px'}
-							width={'210px'}
-						/>
+							onClick={() => window.open('https://credshields.com/', '_blank')}
+							cursor='pointer'
+							src={`${assetsUrl}/logos/cs_logo_main.svg`}
+							height={'40px'}
+							width={'120px'}
+						/>{' '}
 					</VStack>
 					<HStack w={['100%', '100%', '30%', '40%']}>
 						<VStack
@@ -166,6 +165,7 @@ export const FooterSection: React.FC = () => {
 						<HStack>
 							{socialLink.map((item) => (
 								<Image
+									cursor={'pointer'}
 									onClick={() => window.open(item.socialUrl, '_blank')}
 									src={`${assetsUrl}/socials/footer/${item.imgLink}.svg`}
 									height={'30px'}
