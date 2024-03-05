@@ -43,14 +43,11 @@ export default function Landing() {
 			md: 'pos_banner_landscape.png',
 		}) || 'pos_banner_landscape.png';
 
-	const [isDesktopView] = useMediaQuery('(min-width: 1000px)');
-
-	let videoUrl =
-		useBreakpointValue({
-			base: 'mobile_video',
-			sm: 'tablet_video',
-			md: 'main_video',
-		}) || 'main_video';
+	const [isDesktopView, isTabletView, isMobileView] = useMediaQuery([
+		'(min-width: 1000px)',
+		'(min-width: 500px)',
+		'(min-width: 100px)',
+	]);
 
 	const scrollTo = (elementId: string) => {
 		const element = document.getElementById(elementId);
@@ -99,7 +96,24 @@ export default function Landing() {
 						autoPlay
 						muted
 						loop>
-						<source src={`${videoUrl}.mp4`} type='video/mp4' />
+						{isDesktopView && (
+							<source
+								src={`${assetsUrl}/video/landing_video_desktop.mp4`}
+								type='video/mp4'
+							/>
+						)}
+						{isTabletView && (
+							<source
+								src={`${assetsUrl}/video/landing_video_tablet.mp4`}
+								type='video/mp4'
+							/>
+						)}
+						{isMobileView && (
+							<source
+								src={`${assetsUrl}/video/landing_video_mobile.mp4`}
+								type='video/mp4'
+							/>
+						)}
 					</video>
 				</Box>
 				<Flex
