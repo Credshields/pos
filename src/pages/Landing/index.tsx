@@ -3,23 +3,18 @@ import {
 	Container,
 	Flex,
 	HStack,
-	Link,
 	useBreakpointValue,
 	useMediaQuery,
 	Text,
-	Button,
 	Drawer,
 	DrawerBody,
 	DrawerCloseButton,
 	DrawerContent,
-	DrawerFooter,
-	DrawerHeader,
 	DrawerOverlay,
-	Input,
 	useDisclosure,
 	VStack,
+	Button,
 } from '@chakra-ui/react';
-import React, { useEffect, lazy, Suspense } from 'react';
 import { Hero } from '../../components/Landing/Hero';
 import { HeroInfographics } from '../../components/Landing/heroInfographics';
 import { SpeakersCS } from '../../components/Landing/SpeakersCS';
@@ -27,9 +22,7 @@ import { PartnersCS } from '../../components/Landing/PartnersCS';
 import { ScheduleCS } from '../../components/Landing/ScheduleCS';
 import { EventSection } from '../../components/Landing/EventSection';
 import { PhotoReel } from '../../components/Landing/PhotoReel';
-import { SpeakersSection } from '../../components/Landing/SpeakersSection';
-import { PartnerSection } from '../../components/Landing/PartnerSection';
-import { ScheduleSection } from '../../components/Landing/ScheduleSection';
+
 import { FooterSection } from '../../components/Landing/FooterSection';
 import { assetsUrl } from '../../helpers/values';
 import { Image } from '@chakra-ui/react';
@@ -122,7 +115,9 @@ export default function Landing() {
 					h='100%'
 					zIndex={1}
 					backgroundColor={'#00000060'}
+					background={'linear-gradient(to right, #000000, #00000000)'}
 					justifyContent={'flex-start'}
+					alignItems={'center'}
 					direction={'column'}>
 					<HStack
 						width={'100%'}
@@ -237,14 +232,34 @@ export default function Landing() {
 						</HStack>
 					</HStack>
 					<Hero />
+					<Button
+						display={['none', 'none', 'block']}
+						sx={{
+							background:
+								'linear-gradient(129.18deg, #52FF00 8.52%, #00EEFD 93.94%)',
+							boxShadow: '0px 4px 23px rgba(47, 248, 107, 0.45)',
+							color: 'black',
+						}}
+						maxW={'300px'}
+						w='90%'
+						borderRadius={30}
+						onClick={() => window.open('https://lu.ma/ProofofsecurityDubai')}
+						variant={'solid'}
+						px={10}
+						mt={5}
+						size={'lg'}>
+						RSVP
+					</Button>
 				</Flex>
 			</Flex>
 			<HeroInfographics />
 			<Image
+				onClick={() => window.open('https://lu.ma/ProofofsecurityDubai')}
+				cursor={'pointer'}
 				src={`${assetsUrl}/pos_banner/${bannerUrl}`}
 				height='auto'
 				mx='auto'
-				my={['50px', '80px', '100px', '150px']}
+				my={['50px']}
 				borderRadius={'50px'}
 				width='80%'
 			/>

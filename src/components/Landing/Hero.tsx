@@ -1,20 +1,13 @@
 import React from 'react';
 import {
 	Flex,
-	Box,
 	Heading,
 	Button,
-	Text,
-	useMediaQuery,
 	HStack,
 	Image,
 	Divider,
 	VStack,
-	useBreakpointValue,
 } from '@chakra-ui/react';
-import { HamburgerIcon } from '@chakra-ui/icons';
-
-import { Link } from 'react-router-dom';
 import { assetsUrl, socialLink } from '../../helpers/values';
 
 export const Hero: React.FC = () => {
@@ -22,7 +15,7 @@ export const Hero: React.FC = () => {
 		<Flex
 			position='relative'
 			w='100%'
-			h='calc(100% - 80px)'
+			h='calc(100% - 240px)'
 			justifyContent={'space-between'}
 			direction={'row'}>
 			<Flex
@@ -31,13 +24,12 @@ export const Hero: React.FC = () => {
 				alignItems={['center', 'center', 'flex-start']}
 				w={['100%', '100%', '100%', '50%']}
 				h='100%'
-				p={[10, 10, 20]}
-				background={'linear-gradient(to right, #000000, #00000000)'}>
+				p={[10, 10, 20]}>
 				<HStack
 					justifyContent={['flex-end', 'flex-end', 'space-between']}
 					w='100%'
 					alignItems={'flex-end'}>
-					<HStack spacing={10} display={['none', 'none', 'flex']}>
+					<HStack spacing={5} display={['none', 'none', 'flex']}>
 						<Image
 							onClick={() => window.open('https://solidityscan.com/', '_blank')}
 							cursor='pointer'
@@ -45,7 +37,11 @@ export const Hero: React.FC = () => {
 							height='80px'
 							width='240px'
 						/>
-						<Divider orientation='vertical' />
+						<Divider
+							height={'100px'}
+							bgColor={'white'}
+							orientation='vertical'
+						/>
 						<Image
 							src={`${assetsUrl}/logos/ss_logo_main.svg`}
 							height='80px'
@@ -82,7 +78,12 @@ export const Hero: React.FC = () => {
 						SUMMIT - 2024 DUBAI
 					</Heading>
 					<Button
-						bgColor={'#E4F3DF'}
+						sx={{
+							background:
+								'linear-gradient(129.18deg, #52FF00 8.52%, #00EEFD 93.94%)',
+							boxShadow: '0px 4px 23px rgba(47, 248, 107, 0.45)',
+							color: 'black',
+						}}
 						borderRadius={30}
 						variant={'solid'}
 						px={10}
@@ -113,18 +114,8 @@ export const Hero: React.FC = () => {
 					color={'white'}>
 					2024 - DUBAI
 				</Heading>
-				<Button
-					display={['none', 'none', 'block']}
-					bgColor={'#E4F3DF'}
-					borderRadius={30}
-					onClick={() => window.open('https://lu.ma/ProofofsecurityDubai')}
-					variant={'solid'}
-					px={10}
-					mt={5}
-					size={'lg'}>
-					RSVP
-				</Button>
 			</Flex>
+
 			<VStack
 				display={['none', 'none', 'flex']}
 				mr='50px'

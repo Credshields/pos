@@ -38,6 +38,13 @@ export const EventSection: React.FC = () => {
 					flexDir={'row'}
 					justifyContent={'flex-start'}
 					alignItems={'flex-end'}
+					onClick={() =>
+						window.open(
+							'https://youtu.be/p8nbUYY9PBU?si=cqrCiNb81Rg9D39P',
+							'_blank'
+						)
+					}
+					cursor={'pointer'}
 					borderRadius={20}
 					overflow={'hidden'}
 					backgroundSize={'contain'}
@@ -54,12 +61,6 @@ export const EventSection: React.FC = () => {
 							height={['30px', '40px', '50px']}
 							width={['30px', '40px', '50px']}
 							mr={[5, 7, 10]}
-							onClick={() =>
-								window.open(
-									'https://youtu.be/p8nbUYY9PBU?si=cqrCiNb81Rg9D39P',
-									'_blank'
-								)
-							}
 						/>
 						<Text
 							fontSize={['md', 'lg', 'xl']}
