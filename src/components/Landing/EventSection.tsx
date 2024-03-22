@@ -38,12 +38,7 @@ export const EventSection: React.FC = () => {
 					flexDir={'row'}
 					justifyContent={'flex-start'}
 					alignItems={'flex-end'}
-					onClick={() =>
-						window.open(
-							'https://youtu.be/p8nbUYY9PBU?si=cqrCiNb81Rg9D39P',
-							'_blank'
-						)
-					}
+					onClick={() => window.open('https://youtu.be/jt-b_JQ5ZiE', '_blank')}
 					cursor={'pointer'}
 					borderRadius={20}
 					overflow={'hidden'}
