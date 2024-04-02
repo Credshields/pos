@@ -17,7 +17,7 @@ export const PartnerSection: React.FC = () => {
 		<VStack w='95%' maxW='1600px' alignItems={'center'}>
 			<SectionHeader
 				heading='PARTNERS'
-				subText='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+				subText='Meet Our Partners: Collaborators Driving Innovation Together'
 			/>
 			<PartnerList />
 		</VStack>

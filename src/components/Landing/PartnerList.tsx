@@ -23,7 +23,7 @@ export const PartnerList: React.FC = () => {
 			px={[3, 5, 20]}
 			pb={20}
 			alignItems={'center'}>
-			<VStack
+			{/* <VStack
 				w='100%'
 				backgroundColor={'#191919'}
 				borderRadius={20}
@@ -41,7 +41,7 @@ export const PartnerList: React.FC = () => {
 						src={`${assetsUrl}/partners/partner1.svg`}
 					/>
 				</HStack>
-			</VStack>
+			</VStack> */}
 
 			<VStack
 				w='100%'
@@ -50,9 +50,6 @@ export const PartnerList: React.FC = () => {
 				spacing={7}
 				mt={12}
 				p={[5, 7, 10]}>
-				<Text textAlign={'center'} fontSize={['xl', '2xl', '3xl']}>
-					Associate Partners
-				</Text>
 				<HStack
 					w='100%'
 					justifyContent={'center'}
@@ -63,10 +60,10 @@ export const PartnerList: React.FC = () => {
 						borderRight={'1px solid #4A4A4A'}
 						justifyContent={'center'}
 						w='50%'>
-						<Image height={'40px'} src={`${assetsUrl}/partners/partner2.svg`} />
+						<Image height={'40px'} src={`${assetsUrl}/partners/poslogo.svg`} />
 					</Flex>
 					<Flex p={[5, 5, 7]} justifyContent={'center'} w='50%'>
-						<Image height={'40px'} src={`${assetsUrl}/partners/partner7.svg`} />
+						<Image height={'40px'} src={`${assetsUrl}/partners/scale.png`} />
 					</Flex>
 				</HStack>
 			</VStack>
@@ -79,7 +76,7 @@ export const PartnerList: React.FC = () => {
 				mt={12}
 				justifyContent={'flex-start'}
 				p={[5, 7, 10]}>
-				<Text fontSize={['xl', '2xl', '3xl']}>Sponsors</Text>
+				{/* <Text fontSize={['xl', '2xl', '3xl']}>Sponsors</Text> */}
 				<HStack
 					w='100%'
 					justifyContent={'center'}
@@ -92,30 +89,37 @@ export const PartnerList: React.FC = () => {
 						p={7}
 						borderRight={'1px solid #4A4A4A'}
 						justifyContent={'center'}
-						w={['50%', '50%', '25%']}>
-						<Image height={'40px'} src={`${assetsUrl}/partners/partner3.svg`} />
+						w={['50%', '50%', '20%']}>
+						<Image height={'40px'} src={`${assetsUrl}/partners/dojima.svg`} />
 					</Flex>
 					<Flex
 						p={7}
 						borderRight={['none', 'none', '1px solid #4A4A4A']}
 						justifyContent={'center'}
-						w={['50%', '50%', '25%']}>
-						<Image height={'40px'} src={`${assetsUrl}/partners/partner4.svg`} />
+						w={['50%', '50%', '20%']}>
+						<Image height={'40px'} src={`${assetsUrl}/partners/ghaf.png`} />
 					</Flex>
 					<Flex
 						borderTop={['1px solid #4A4A4A', '1px solid #4A4A4A', 'none']}
 						p={7}
 						borderRight={'1px solid #4A4A4A'}
 						justifyContent={'center'}
-						w={['50%', '50%', '25%']}>
-						<Image height={'40px'} src={`${assetsUrl}/partners/partner5.svg`} />
+						w={['50%', '50%', '20%']}>
+						<Image height={'40px'} src={`${assetsUrl}/partners/boba.svg`} />
 					</Flex>
 					<Flex
 						borderTop={['1px solid #4A4A4A', '1px solid #4A4A4A', 'none']}
 						p={7}
 						justifyContent={'center'}
-						w={['50%', '50%', '25%']}>
-						<Image height={'40px'} src={`${assetsUrl}/partners/partner6.svg`} />
+						w={['50%', '50%', '20%']}>
+						<Image height={'40px'} src={`${assetsUrl}/partners/nadmah.png`} />
+					</Flex>
+					<Flex
+						borderTop={['1px solid #4A4A4A', '1px solid #4A4A4A', 'none']}
+						p={7}
+						justifyContent={'center'}
+						w={['50%', '50%', '20%']}>
+						<Image height={'40px'} src={`${assetsUrl}/partners/panoray.png`} />
 					</Flex>
 				</HStack>
 			</VStack>

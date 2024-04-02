@@ -27,6 +27,8 @@ import { FooterSection } from '../../components/Landing/FooterSection';
 import { assetsUrl } from '../../helpers/values';
 import { Image } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
+import { PartnerList } from '../../components/Landing/PartnerList';
+import { PartnerSection } from '../../components/Landing/PartnerSection';
 
 export default function Landing() {
 	let bannerUrl =
@@ -279,7 +281,7 @@ export default function Landing() {
 				justifyContent={'center'}
 				backgroundColor={'#1A211B'}
 				alignItems={'center'}>
-				<PartnersCS />
+				<PartnerSection />
 			</Flex>
 			<Flex
 				id='schedule'
