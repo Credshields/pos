@@ -124,6 +124,53 @@ export const PartnerList: React.FC = () => {
 					</Flex>
 				</HStack>
 			</VStack>
+			<VStack
+				w='100%'
+				backgroundColor={'#191919'}
+				borderRadius={20}
+				spacing={7}
+				mt={12}
+				justifyContent={'flex-start'}
+				p={[5, 7, 10]}>
+				<Text fontSize={['xl', '2xl', '3xl']}>Media Partners</Text>
+				<HStack
+					w='100%'
+					justifyContent={'center'}
+					borderRadius={10}
+					flexWrap={'wrap'}
+					rowGap={0}
+					columnGap={0}
+					border='1px solid #4A4A4A'>
+					<Flex
+						p={7}
+						borderRight={'1px solid #4A4A4A'}
+						justifyContent={'center'}
+						w={['50%', '50%', '20%']}>
+						<Image
+							height={'40px'}
+							src={`${assetsUrl}/partners/saladlabs.png`}
+						/>
+					</Flex>
+					<Flex
+						p={7}
+						borderRight={['none', 'none', '1px solid #4A4A4A']}
+						justifyContent={'center'}
+						w={['50%', '50%', '20%']}>
+						<Image height={'40px'} src={`${assetsUrl}/partners/web3tv.png`} />
+					</Flex>
+
+					<Flex
+						borderTop={['1px solid #4A4A4A', '1px solid #4A4A4A', 'none']}
+						p={7}
+						justifyContent={'center'}
+						w={['50%', '50%', '20%']}>
+						<Image
+							height={'40px'}
+							src={`${assetsUrl}/partners/tradersbrawl.png`}
+						/>
+					</Flex>
+				</HStack>
+			</VStack>
 		</Flex>
 	);
 };
