@@ -110,6 +110,7 @@ export const PartnerList: React.FC = () => {
 					<Flex
 						borderTop={['1px solid #4A4A4A', '1px solid #4A4A4A', 'none']}
 						p={7}
+						borderRight={'1px solid #4A4A4A'}
 						justifyContent={'center'}
 						w={['50%', '50%', '20%']}>
 						<Image height={'40px'} src={`${assetsUrl}/partners/nadmah.png`} />
