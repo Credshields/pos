@@ -33,10 +33,10 @@ import { PartnerSection } from '../../components/Landing/PartnerSection';
 export default function Landing() {
 	let bannerUrl =
 		useBreakpointValue({
-			base: 'pos_banner_potrait.png',
-			sm: 'pos_banner_potrait.png',
-			md: 'pos_banner_landscape.png',
-		}) || 'pos_banner_landscape.png';
+			base: 'pos_banner_mobile.png',
+			sm: 'pos_banner_mobile.png',
+			md: 'pos_banner_desktop.png',
+		}) || 'pos_banner_desktop.png';
 
 	const [isDesktopView, isTabletView, isMobileView] = useMediaQuery([
 		'(min-width: 1000px)',

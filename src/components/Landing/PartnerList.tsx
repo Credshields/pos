@@ -156,7 +156,7 @@ export const PartnerList: React.FC = () => {
 						borderRight={['none', 'none', '1px solid #4A4A4A']}
 						justifyContent={'center'}
 						w={['50%', '50%', '20%']}>
-						<Image height={'100px'} src={`${assetsUrl}/partners/web3tv.png`} />
+						<Image height={'40px'} src={`${assetsUrl}/partners/web3_tv.png`} />
 					</Flex>
 
 					<Flex
@@ -166,7 +166,7 @@ export const PartnerList: React.FC = () => {
 						w={['50%', '50%', '20%']}>
 						<Image
 							height={'40px'}
-							src={`${assetsUrl}/partners/tradersbrawl.png`}
+							src={`${assetsUrl}/partners/traders_brawl.png`}
 						/>
 					</Flex>
 				</HStack>
