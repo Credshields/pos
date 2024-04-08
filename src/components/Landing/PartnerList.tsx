@@ -165,7 +165,7 @@ export const PartnerList: React.FC = () => {
 						w={['50%', '50%', '20%']}>
 						<Image
 							height={'40px'}
-							src={`${assetsUrl}/partners/surge_socials.png`}
+							src={`${assetsUrl}/partners/surge_socials.svg`}
 						/>
 					</Flex>
 
