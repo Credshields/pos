@@ -158,6 +158,16 @@ export const PartnerList: React.FC = () => {
 						w={['50%', '50%', '20%']}>
 						<Image height={'40px'} src={`${assetsUrl}/partners/web3_tv.png`} />
 					</Flex>
+					<Flex
+						p={7}
+						borderRight={['none', 'none', '1px solid #4A4A4A']}
+						justifyContent={'center'}
+						w={['50%', '50%', '20%']}>
+						<Image
+							height={'40px'}
+							src={`${assetsUrl}/partners/surge_socials.png`}
+						/>
+					</Flex>
 
 					<Flex
 						borderTop={['1px solid #4A4A4A', '1px solid #4A4A4A', 'none']}
