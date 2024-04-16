@@ -50,18 +50,34 @@ export const PartnerList: React.FC = () => {
 				spacing={7}
 				mt={12}
 				p={[5, 7, 10]}>
+				<Text fontSize={['xl', '2xl', '3xl']}>Hosted By</Text>
 				<HStack
 					w='100%'
 					justifyContent={'center'}
 					borderRadius={10}
 					border='1px solid #4A4A4A'>
-					<Flex
-						p={[5, 5, 7]}
-						borderRight={'1px solid #4A4A4A'}
-						justifyContent={'center'}
-						w='50%'>
-						<Image height={'40px'} src={`${assetsUrl}/partners/poslogo.svg`} />
+					<Flex p={[5, 5, 7]} justifyContent={'center'} w='50%'>
+						<Image
+							height={'50px'}
+							src={`${assetsUrl}/partners/ss_logo_main.svg`}
+						/>
 					</Flex>
+				</HStack>
+			</VStack>
+
+			<VStack
+				w='100%'
+				backgroundColor={'#191919'}
+				borderRadius={20}
+				spacing={7}
+				mt={12}
+				p={[5, 7, 10]}>
+				<Text fontSize={['xl', '2xl']}>Co-Host</Text>
+				<HStack
+					w='100%'
+					justifyContent={'center'}
+					borderRadius={10}
+					border='1px solid #4A4A4A'>
 					<Flex p={[5, 5, 7]} justifyContent={'center'} w='50%'>
 						<Image height={'40px'} src={`${assetsUrl}/partners/scale.png`} />
 					</Flex>
@@ -128,7 +144,7 @@ export const PartnerList: React.FC = () => {
 				w='100%'
 				backgroundColor={'#191919'}
 				borderRadius={20}
-				spacing={7}
+				spacing={0}
 				mt={12}
 				justifyContent={'flex-start'}
 				p={[5, 7, 10]}>
@@ -137,6 +153,7 @@ export const PartnerList: React.FC = () => {
 					w='100%'
 					justifyContent={'center'}
 					borderRadius={10}
+					borderBottomRadius={0}
 					flexWrap={'wrap'}
 					rowGap={0}
 					columnGap={0}
@@ -145,7 +162,7 @@ export const PartnerList: React.FC = () => {
 						p={7}
 						borderRight={'1px solid #4A4A4A'}
 						justifyContent={'center'}
-						w={['50%', '50%', '20%']}>
+						w={['50%', '50%', '25%']}>
 						<Image
 							height={'40px'}
 							src={`${assetsUrl}/partners/saladlabs.png`}
@@ -155,14 +172,14 @@ export const PartnerList: React.FC = () => {
 						p={7}
 						borderRight={['none', 'none', '1px solid #4A4A4A']}
 						justifyContent={'center'}
-						w={['50%', '50%', '20%']}>
+						w={['50%', '50%', '25%']}>
 						<Image height={'40px'} src={`${assetsUrl}/partners/web3_tv.png`} />
 					</Flex>
 					<Flex
 						p={7}
 						borderRight={['none', 'none', '1px solid #4A4A4A']}
 						justifyContent={'center'}
-						w={['50%', '50%', '20%']}>
+						w={['50%', '50%', '25%']}>
 						<Image
 							height={'40px'}
 							src={`${assetsUrl}/partners/surge_socials.svg`}
@@ -173,10 +190,72 @@ export const PartnerList: React.FC = () => {
 						borderTop={['1px solid #4A4A4A', '1px solid #4A4A4A', 'none']}
 						p={7}
 						justifyContent={'center'}
-						w={['50%', '50%', '20%']}>
+						w={['50%', '50%', '25%']}>
 						<Image
 							height={'40px'}
 							src={`${assetsUrl}/partners/traders_brawl.png`}
+						/>
+					</Flex>
+				</HStack>
+				<HStack
+					w='100%'
+					justifyContent={'center'}
+					borderRadius={10}
+					borderTopRadius={0}
+					borderBottomRadius={0}
+					flexWrap={'wrap'}
+					rowGap={0}
+					columnGap={0}
+					border='1px solid #4A4A4A'>
+					<Flex
+						p={7}
+						borderRight={'1px solid #4A4A4A'}
+						justifyContent={'center'}
+						w={['100%', '33.33%']}>
+						<Image
+							height={'40px'}
+							src={`${assetsUrl}/partners/actual_one.svg`}
+						/>
+					</Flex>
+					<Flex
+						p={7}
+						borderRight={['none', 'none', '1px solid #4A4A4A']}
+						justifyContent={'center'}
+						w={['100%', '33.33%']}>
+						<Image
+							height={'50px'}
+							src={`${assetsUrl}/partners/coin_pedia.svg`}
+						/>
+					</Flex>
+					<Flex
+						p={7}
+						borderRight={['none', 'none', '1px solid #4A4A4A']}
+						justifyContent={'center'}
+						w={['100%', '33.33%']}>
+						<Image
+							height={'40px'}
+							src={`${assetsUrl}/partners/news_crypto.svg`}
+						/>
+					</Flex>
+				</HStack>
+			</VStack>
+			<VStack
+				w='100%'
+				backgroundColor={'#191919'}
+				borderRadius={20}
+				spacing={7}
+				mt={12}
+				p={[5, 7, 10]}>
+				<Text fontSize={['xl', '2xl']}>PR Partner</Text>
+				<HStack
+					w='100%'
+					justifyContent={'center'}
+					borderRadius={10}
+					border='1px solid #4A4A4A'>
+					<Flex p={[5, 5, 7]} justifyContent={'center'} w='50%'>
+						<Image
+							height={'40px'}
+							src={`${assetsUrl}/partners/zex_pr_wire.svg`}
 						/>
 					</Flex>
 				</HStack>
