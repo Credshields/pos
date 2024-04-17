@@ -173,7 +173,7 @@ export const PartnerList: React.FC = () => {
 						borderRight={['none', 'none', '1px solid #4A4A4A']}
 						justifyContent={'center'}
 						w={['50%', '50%', '25%']}>
-						<Image height={'40px'} src={`${assetsUrl}/partners/web3_tv.png`} />
+						<Image height={'40px'} src={`${assetsUrl}/partners/web3_tv.svg`} />
 					</Flex>
 					<Flex
 						p={7}
@@ -202,7 +202,6 @@ export const PartnerList: React.FC = () => {
 					justifyContent={'center'}
 					borderRadius={10}
 					borderTopRadius={0}
-					borderBottomRadius={0}
 					flexWrap={'wrap'}
 					rowGap={0}
 					columnGap={0}
@@ -214,7 +213,7 @@ export const PartnerList: React.FC = () => {
 						w={['100%', '33.33%']}>
 						<Image
 							height={'40px'}
-							src={`${assetsUrl}/partners/actual_one.svg`}
+							src={`${assetsUrl}/partners/cryptoken_media.svg`}
 						/>
 					</Flex>
 					<Flex
@@ -235,6 +234,53 @@ export const PartnerList: React.FC = () => {
 						<Image
 							height={'40px'}
 							src={`${assetsUrl}/partners/news_crypto.svg`}
+						/>
+					</Flex>
+				</HStack>
+			</VStack>
+			<VStack
+				w='100%'
+				backgroundColor={'#191919'}
+				borderRadius={20}
+				spacing={0}
+				mt={12}
+				justifyContent={'flex-start'}
+				p={[5, 7, 10]}>
+				<Text fontSize={['xl', '2xl', '3xl']}>Community Partners</Text>
+
+				<HStack
+					w='100%'
+					justifyContent={'center'}
+					borderRadius={10}
+					flexWrap={'wrap'}
+					rowGap={0}
+					columnGap={0}
+					border='1px solid #4A4A4A'>
+					<Flex
+						p={7}
+						borderRight={'1px solid #4A4A4A'}
+						justifyContent={'center'}
+						w={['100%', '33.33%']}>
+						<Image height={'40px'} src={`${assetsUrl}/partners/suci.svg`} />
+					</Flex>
+					<Flex
+						p={7}
+						borderRight={['none', 'none', '1px solid #4A4A4A']}
+						justifyContent={'center'}
+						w={['100%', '33.33%']}>
+						<Image
+							height={'50px'}
+							src={`${assetsUrl}/partners/actual_one.svg`}
+						/>
+					</Flex>
+					<Flex
+						p={7}
+						borderRight={['none', 'none', '1px solid #4A4A4A']}
+						justifyContent={'center'}
+						w={['100%', '33.33%']}>
+						<Image
+							height={'40px'}
+							src={`${assetsUrl}/partners/blockchained.svg`}
 						/>
 					</Flex>
 				</HStack>
