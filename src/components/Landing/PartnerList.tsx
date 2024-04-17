@@ -169,30 +169,30 @@ export const PartnerList: React.FC = () => {
 						/>
 					</Flex>
 					<Flex
-						p={7}
+						p={3}
 						borderRight={['none', 'none', '1px solid #4A4A4A']}
 						justifyContent={'center'}
 						w={['50%', '50%', '25%']}>
-						<Image height={'40px'} src={`${assetsUrl}/partners/web3_tv.svg`} />
+						<Image height={'70px'} src={`${assetsUrl}/partners/web3_tv.svg`} />
 					</Flex>
 					<Flex
-						p={7}
+						p={2}
 						borderRight={['none', 'none', '1px solid #4A4A4A']}
 						justifyContent={'center'}
 						w={['50%', '50%', '25%']}>
 						<Image
-							height={'40px'}
+							height={'70px'}
 							src={`${assetsUrl}/partners/surge_socials.svg`}
 						/>
 					</Flex>
 
 					<Flex
 						borderTop={['1px solid #4A4A4A', '1px solid #4A4A4A', 'none']}
-						p={7}
+						p={3}
 						justifyContent={'center'}
 						w={['50%', '50%', '25%']}>
 						<Image
-							height={'40px'}
+							height={'50px'}
 							src={`${assetsUrl}/partners/traders_brawl.png`}
 						/>
 					</Flex>
@@ -205,34 +205,35 @@ export const PartnerList: React.FC = () => {
 					flexWrap={'wrap'}
 					rowGap={0}
 					columnGap={0}
-					border='1px solid #4A4A4A'>
+					border='1px solid #4A4A4A'
+					borderTopWidth={0}>
 					<Flex
-						p={7}
+						p={4}
 						borderRight={'1px solid #4A4A4A'}
 						justifyContent={'center'}
 						w={['100%', '33.33%']}>
 						<Image
-							height={'40px'}
+							height={'60px'}
 							src={`${assetsUrl}/partners/cryptoken_media.svg`}
 						/>
 					</Flex>
 					<Flex
-						p={7}
+						p={4}
 						borderRight={['none', 'none', '1px solid #4A4A4A']}
 						justifyContent={'center'}
 						w={['100%', '33.33%']}>
 						<Image
-							height={'50px'}
+							height={'60px'}
 							src={`${assetsUrl}/partners/coin_pedia.svg`}
 						/>
 					</Flex>
 					<Flex
-						p={7}
+						p={3}
 						borderRight={['none', 'none', '1px solid #4A4A4A']}
 						justifyContent={'center'}
 						w={['100%', '33.33%']}>
 						<Image
-							height={'40px'}
+							height={'60px'}
 							src={`${assetsUrl}/partners/news_crypto.svg`}
 						/>
 					</Flex>
@@ -258,13 +259,15 @@ export const PartnerList: React.FC = () => {
 					border='1px solid #4A4A4A'>
 					<Flex
 						p={7}
+						h='100%'
 						borderRight={'1px solid #4A4A4A'}
 						justifyContent={'center'}
 						w={['100%', '33.33%']}>
-						<Image height={'40px'} src={`${assetsUrl}/partners/suci.svg`} />
+						<Image height={'60px'} src={`${assetsUrl}/partners/suci.svg`} />
 					</Flex>
 					<Flex
 						p={7}
+						h='100%'
 						borderRight={['none', 'none', '1px solid #4A4A4A']}
 						justifyContent={'center'}
 						w={['100%', '33.33%']}>
@@ -275,6 +278,7 @@ export const PartnerList: React.FC = () => {
 					</Flex>
 					<Flex
 						p={7}
+						h='100%'
 						borderRight={['none', 'none', '1px solid #4A4A4A']}
 						justifyContent={'center'}
 						w={['100%', '33.33%']}>
