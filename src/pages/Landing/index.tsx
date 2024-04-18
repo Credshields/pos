@@ -30,6 +30,7 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 import { PartnerList } from '../../components/Landing/PartnerList';
 import { PartnerSection } from '../../components/Landing/PartnerSection';
 import { ScheduleSection } from '../../components/Landing/ScheduleSection';
+import { SpeakersSection } from '../../components/Landing/SpeakersSection';
 
 export default function Landing() {
 	let bannerUrl =
@@ -273,7 +274,7 @@ export default function Landing() {
 				justifyContent={'center'}
 				backgroundColor={'#031606'}
 				alignItems={'center'}>
-				<SpeakersCS />
+				<SpeakersSection />
 			</Flex>
 			<Flex
 				id='partners'

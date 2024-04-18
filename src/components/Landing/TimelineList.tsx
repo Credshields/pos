@@ -25,19 +25,12 @@ const timeline = [
 		number: '3',
 		time: '15:45PM - 16:15PM',
 		heading: 'Fireside Chat I  ',
-		subHeading:
-			'Akhil Reddy, Founder, Dojima Network Praveen, CTO & Co-founder, ONEWAYX | Nordek Rahul Saxena, Protocol Security, zk sync Anirudh, Growth and ',
+		subHeading: '',
 	},
 	{
 		number: '4',
 		time: '16:15PM - 16:45PM',
 		heading: 'Fireside Chat II',
-		subHeading: '',
-	},
-	{
-		number: '5',
-		time: '8:15 PM - 8:45 PM',
-		heading: 'AccelChain Panel',
 		subHeading: '',
 	},
 	{
@@ -51,19 +44,6 @@ const timeline = [
 		time: '17:30PM - 19:00PM',
 		heading: 'Networking and Refreshments',
 		subHeading: '',
-	},
-	{
-		number: '8',
-		time: '9:30 PM - 10:00 PM',
-		heading: 'AccelChain Panel',
-		subHeading:
-			'Ram Shanmugam, Co-founder, Accelchain Mudit Gupta - CISO Polygon Puneet Singh, PwC Deep Chenna, Google Cloud',
-	},
-	{
-		number: '9',
-		time: '10:00 PM - 11:00 PM',
-		heading: 'Speaker',
-		subHeading: 'Charles Dray, CEO, Resonance Security',
 	},
 ];
 

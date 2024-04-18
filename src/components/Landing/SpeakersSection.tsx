@@ -18,7 +18,7 @@ export const SpeakersSection: React.FC = () => {
 		<VStack mb={20} w='95%' maxW='1800px' alignItems={'center'}>
 			<SectionHeader
 				heading='SPEAKERS'
-				subText='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+				subText='Meet Our Esteemed Speakers: Experts Leading the Conversation'
 			/>
 			<SpeakerList />
 			<PanelSlider />
