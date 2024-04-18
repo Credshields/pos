@@ -15,7 +15,7 @@ import { PanelSlider } from './PanelSlider';
 
 export const SpeakersSection: React.FC = () => {
 	return (
-		<VStack w='95%' maxW='1800px' alignItems={'center'}>
+		<VStack mb={20} w='95%' maxW='1800px' alignItems={'center'}>
 			<SectionHeader
 				heading='SPEAKERS'
 				subText='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'

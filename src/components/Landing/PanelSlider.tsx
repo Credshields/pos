@@ -18,61 +18,101 @@ import { assetsUrl } from '../../helpers/values';
 
 export const PanelSlider: React.FC = () => {
 	const data: {
-		name: string;
-		desc: string;
+		list: {
+			name: string;
+			desc: string;
 
-		imgLink: string;
+			imgLink: string;
+		}[];
+		title: string;
+		description: string;
 	}[] = [
 		{
-			name: 'Mudit Gupta',
-			desc: 'CISO',
-			imgLink: 'panel1',
+			title: 'FIRESIDE',
+			description:
+				'“On the crossroads of traditions and latest technology: how the crypto adoption evolve cultural life in the Middle East”',
+			list: [
+				{
+					name: 'Vugar',
+					desc: 'COO, Bitget',
+					imgLink: 'vugar',
+				},
+				{
+					name: 'Mary Pedler',
+					desc: 'Founder, INPUT Comms',
+					imgLink: 'mary',
+				},
+			],
 		},
 		{
-			name: 'Issac Kim',
-			desc: 'Head of Asia BD',
-			imgLink: 'panel2',
+			title: 'PANEL DISCUSSION',
+			description: '“The Future of Web3 Regulation and Compliance”',
+			list: [
+				{
+					name: 'Thomas',
+					desc: 'Co-founder, Nadmah',
+					imgLink: 'thomas',
+				},
+				{
+					name: 'Harly',
+					desc: 'Managing Partner, Neo Legal',
+					imgLink: 'harly',
+				},
+				{
+					name: 'AJ',
+					desc: 'Nordek',
+					imgLink: 'aj',
+				},
+			],
 		},
 		{
-			name: 'Charles Dray',
-			desc: 'CEO',
-			imgLink: 'panel3',
-		},
-		{
-			name: 'Shashank',
-			desc: 'Co-founder & CEO',
-			imgLink: 'panel4',
+			title: 'FIRESIDE',
+			description:
+				'“On the crossroads of traditions and latest technology: how the crypto adoption evolve cultural life in the Middle East”',
+			list: [
+				{
+					name: 'Anirudh',
+					desc: 'Head of Growth, Etherspot',
+					imgLink: 'anirudh',
+				},
+				{
+					name: 'Shashank',
+					desc: 'Co-Founder and CEO, CredShields',
+					imgLink: 'shashank',
+				},
+				{
+					name: 'Igor',
+					desc: 'Hacken',
+					imgLink: 'igor',
+				},
+				{
+					name: 'Mudit Gupta',
+					desc: 'Polygon',
+					imgLink: 'mudit',
+				},
+				{
+					name: 'Mohamed',
+					desc: 'Japan Open Chain',
+					imgLink: 'mohamed',
+				},
+			],
 		},
 	];
 
 	return (
-		<Flex
-			width='90%'
-			height='fit-content'
-			justifyContent={'center'}
-			mt={[10, 10, 20]}
-			py={[5, 8, 20]}
-			px={[3, 5, 10]}
-			borderRadius={'30px'}
-			backgroundColor={'#2A2A2A'}
-			alignItems={'center'}>
-			<Swiper
-				initialSlide={1}
-				slidesPerView={1}
-				spaceBetween={0}
-				centeredSlides={true}
-				navigation={true}
-				onSwiper={(swiper: any) => console.log(swiper)}
-				pagination={true}
-				style={{
-					width: '100%',
-					height: 'fit-content',
-					flexDirection: 'row',
-					justifyContent: 'center',
-				}}
-				modules={[Navigation, Pagination]}>
-				{[1, 2, 3, 4, 5].map((item) => (
-					<SwiperSlide
+		<>
+			{data.map((arrayItem) => (
+				<Flex
+					width='90%'
+					height='fit-content'
+					justifyContent={'center'}
+					mt={[10, 10, 20]}
+					py={[5, 8, 20]}
+					px={[3, 5, 10]}
+					borderRadius={'30px'}
+					backgroundColor={'#2A2A2A'}
+					alignItems={'center'}>
+					<Flex
 						style={{
 							width: '100%',
 							height: 'fit-content',
@@ -86,15 +126,14 @@ export const PanelSlider: React.FC = () => {
 								fontFamily={'League Gothic'}
 								fontSize={'5xl'}
 								color={'#E4F3DF'}>
-								PANEL DISCUSSION
+								{arrayItem.title}
 							</Heading>
 							<Text
 								textAlign={'center'}
 								fontSize={'lg'}
 								color={'#FFFFFF'}
 								fontWeight={500}>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod
+								{arrayItem.description}
 							</Text>
 						</VStack>
 						<HStack
@@ -103,7 +142,7 @@ export const PanelSlider: React.FC = () => {
 							rowGap={10}
 							columnGap={[5, 10]}
 							width={['100%', '100%', '85%']}>
-							{data.map((item) => (
+							{arrayItem.list.map((item) => (
 								<Flex
 									flexDir={'column'}
 									justifyContent={'flex-start'}
@@ -112,7 +151,7 @@ export const PanelSlider: React.FC = () => {
 									alignItems={'flex-start'}
 									textAlign={'left'}>
 									<Image
-										src={`${assetsUrl}/speakers/${item.imgLink}.png`}
+										src={`${assetsUrl}/speakers/${item.imgLink}.svg`}
 										backgroundRepeat={'no-repeat'}
 										backgroundSize={'contain'}
 										width={['100%', '100%', '220px', '275px']}
@@ -127,9 +166,9 @@ export const PanelSlider: React.FC = () => {
 								</Flex>
 							))}
 						</HStack>
-					</SwiperSlide>
-				))}
-			</Swiper>
-		</Flex>
+					</Flex>
+				</Flex>
+			))}
+		</>
 	);
 };

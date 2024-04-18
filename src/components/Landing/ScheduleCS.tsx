@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react';
 import { SectionHeader } from './SectionHeader';
 import { CSSection } from './CSSection';
+import { ScheduleSection } from './ScheduleSection';
 
 export const ScheduleCS: React.FC = () => {
 	return (
@@ -18,7 +19,7 @@ export const ScheduleCS: React.FC = () => {
 				heading='SCHEDULE'
 				subText='Your Guide to Engaging Sessions and Discussions'
 			/>
-			<CSSection iconUrl='cs_schedule' />
+			<ScheduleSection />
 		</VStack>
 	);
 };

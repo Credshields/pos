@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react';
 import { SectionHeader } from './SectionHeader';
 import { CSSection } from './CSSection';
+import { SpeakersSection } from './SpeakersSection';
 
 export const SpeakersCS: React.FC = () => {
 	return (
@@ -18,7 +19,7 @@ export const SpeakersCS: React.FC = () => {
 				heading='SPEAKERS'
 				subText='Meet Our Esteemed Speakers: Experts Leading the Conversation'
 			/>
-			<CSSection iconUrl='cs_speakers' />
+			<SpeakersSection />
 		</VStack>
 	);
 };

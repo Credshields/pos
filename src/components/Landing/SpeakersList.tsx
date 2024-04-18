@@ -22,58 +22,72 @@ export const SpeakerList: React.FC = () => {
 			name: 'Mudit Gupta',
 			desc1: 'CISO',
 			desc2: 'POLYGON',
-			profilePicLink: 'speaker1',
+			profilePicLink: 'mudit',
 			companyLogoLink: 'comp1',
 		},
 		{
-			name: 'Issac Kim',
-			desc1: 'Head of Asia BD',
-			desc2: 'SEC 3',
-			profilePicLink: 'speaker2',
+			name: 'VUGAR',
+			desc1: 'COO ',
+			desc2: 'Bitget',
+			profilePicLink: 'vugar',
 			companyLogoLink: 'comp2',
 		},
 		{
-			name: 'Charles Dray',
-			desc1: 'CEO',
-			desc2: 'Resonance Security',
-			profilePicLink: 'speaker3',
+			name: 'Mary Pedler',
+			desc1: 'Founder',
+			desc2: ' INPUT Comms',
+			profilePicLink: 'mary',
 			companyLogoLink: 'comp3',
 		},
 		{
-			name: 'Shashank',
-			desc1: 'Co-founder & CEO',
-			desc2: 'Credshields | SolidityScan',
-			profilePicLink: 'speaker4',
+			name: 'Thomas',
+			desc1: 'Co-founder',
+			desc2: 'Nadmah',
+			profilePicLink: 'thomas',
 			companyLogoLink: 'comp4',
 		},
 
 		{
-			name: 'Mudit Gupta',
-			desc1: 'CISO',
-			desc2: 'POLYGON',
-			profilePicLink: 'speaker1',
+			name: 'Harly Zappino',
+			desc1: 'Managing Partner',
+			desc2: 'Neo Lega',
+			profilePicLink: 'harly',
 			companyLogoLink: 'comp1',
 		},
 		{
-			name: 'Issac Kim',
-			desc1: 'Head of Asia BD',
-			desc2: 'SEC 3',
-			profilePicLink: 'speaker2',
+			name: 'AJ',
+			desc1: 'Nordek',
+			desc2: '',
+			profilePicLink: 'aj',
 			companyLogoLink: 'comp2',
 		},
 		{
-			name: 'Charles Dray',
-			desc1: 'CEO',
-			desc2: 'Resonance Security',
-			profilePicLink: 'speaker3',
+			name: 'Anirudh',
+			desc1: 'Head of Growth',
+			desc2: 'Etherspot',
+			profilePicLink: 'anirudh',
 			companyLogoLink: 'comp3',
 		},
 		{
 			name: 'Shashank',
 			desc1: 'Co-founder & CEO',
 			desc2: 'Credshields | SolidityScan',
-			profilePicLink: 'speaker4',
+			profilePicLink: 'shashank',
 			companyLogoLink: 'comp4',
+		},
+		{
+			name: 'Igor',
+			desc1: 'Hacken',
+			desc2: '',
+			profilePicLink: 'igor',
+			companyLogoLink: 'comp3',
+		},
+		{
+			name: 'Mohamed',
+			desc1: 'Japan Open Chain',
+			desc2: '',
+			profilePicLink: 'mohamed',
+			companyLogoLink: 'comp3',
 		},
 	];
 
@@ -85,8 +99,8 @@ export const SpeakerList: React.FC = () => {
 			flexWrap={'wrap'}
 			color={'white'}
 			px={20}
-			rowGap={'60px'}
-			columnGap={'60px'}
+			rowGap={'30px'}
+			columnGap={'30px'}
 			alignItems={'center'}>
 			{data.map((item) => (
 				<Flex
@@ -96,28 +110,14 @@ export const SpeakerList: React.FC = () => {
 					alignItems={'flex-start'}
 					textAlign={'left'}>
 					<Flex
-						backgroundImage={`url(${assetsUrl}/speakers/${item.profilePicLink}.png)`}
+						backgroundImage={`url(${assetsUrl}/speakers/${item.profilePicLink}.svg)`}
 						direction={'row'}
 						backgroundRepeat={'no-repeat'}
 						backgroundSize={'contain'}
 						width={'300px'}
 						height={'280px'}
 						alignItems={'flex-end'}
-						justifyContent={'flex-start'}>
-						<Flex
-							height={'90px'}
-							width={'90px'}
-							borderRadius={'45px'}
-							backgroundColor='#162218'
-							justifyContent={'center'}
-							alignItems={'center'}>
-							<Image
-								height={'60px'}
-								width={'60px'}
-								src={`${assetsUrl}/speakers/${item.companyLogoLink}.svg`}
-							/>
-						</Flex>
-					</Flex>
+						justifyContent={'flex-start'}></Flex>
 					<Text mt={5} fontWeight={600} fontSize={'xl'}>
 						{item.name}
 					</Text>
