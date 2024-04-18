@@ -28,7 +28,7 @@ export const PanelSlider: React.FC = () => {
 		description: string;
 	}[] = [
 		{
-			title: 'FIRESIDE',
+			title: 'FIRESIDE CHAT',
 			description:
 				'“On the crossroads of traditions and latest technology: how the crypto adoption evolve cultural life in the Middle East”',
 			list: [
@@ -45,7 +45,7 @@ export const PanelSlider: React.FC = () => {
 			],
 		},
 		{
-			title: 'PANEL DISCUSSION',
+			title: 'FIRESIDE CHAT',
 			description: '“The Future of Web3 Regulation and Compliance”',
 			list: [
 				{
@@ -66,7 +66,7 @@ export const PanelSlider: React.FC = () => {
 			],
 		},
 		{
-			title: 'FIRESIDE',
+			title: 'PANEL DISCUSSION',
 			description: '“Web3 security and Beyond!”',
 			list: [
 				{
