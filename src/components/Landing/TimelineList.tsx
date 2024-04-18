@@ -18,7 +18,7 @@ const timeline = [
 	{
 		number: '2',
 		time: '15:30PM 15:45PM',
-		heading: 'Welcome Speech (Drishti)',
+		heading: 'Welcome Speech',
 		subHeading: '',
 	},
 	{
