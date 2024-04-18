@@ -67,8 +67,7 @@ export const PanelSlider: React.FC = () => {
 		},
 		{
 			title: 'FIRESIDE',
-			description:
-				'“On the crossroads of traditions and latest technology: how the crypto adoption evolve cultural life in the Middle East”',
+			description: '“Web3 security and Beyond!”',
 			list: [
 				{
 					name: 'Anirudh',

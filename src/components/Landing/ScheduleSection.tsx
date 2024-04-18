@@ -22,7 +22,7 @@ export const ScheduleSection: React.FC = () => {
 		<VStack w='95%' maxW='1600px' alignItems={'center'}>
 			<SectionHeader
 				heading='SCHEDULE'
-				subText='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+				subText='Your Guide to Engaging Sessions and Discussions'
 			/>
 			<ScheduleContainer />
 		</VStack>
