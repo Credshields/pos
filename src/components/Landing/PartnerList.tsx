@@ -37,6 +37,7 @@ export const PartnerList: React.FC = () => {
 					borderRadius={10}
 					border='1px solid #4A4A4A'>
 					<Image
+					cursor={"pointer"} onClick={() => window.open("", "_self")}
 						height={['30px', '35px', '40px']}
 						src={`${assetsUrl}/partners/partner1.svg`}
 					/>
@@ -58,6 +59,8 @@ export const PartnerList: React.FC = () => {
 					border='1px solid #4A4A4A'>
 					<Flex p={[5, 5, 7]} justifyContent={'center'} w='50%'>
 						<Image
+							cursor={'pointer'}
+							onClick={() => window.open('https://solidityscan.com/', '_self')}
 							height={'50px'}
 							src={`${assetsUrl}/partners/ss_logo_main.svg`}
 						/>
@@ -79,7 +82,12 @@ export const PartnerList: React.FC = () => {
 					borderRadius={10}
 					border='1px solid #4A4A4A'>
 					<Flex p={[5, 5, 7]} justifyContent={'center'} w='50%'>
-						<Image height={'40px'} src={`${assetsUrl}/partners/scale.png`} />
+						<Image
+							cursor={'pointer'}
+							onClick={() => window.open('', '_self')}
+							height={'40px'}
+							src={`${assetsUrl}/partners/scale.png`}
+						/>
 					</Flex>
 				</HStack>
 			</VStack>
@@ -106,14 +114,26 @@ export const PartnerList: React.FC = () => {
 						borderRight={'1px solid #4A4A4A'}
 						justifyContent={'center'}
 						w={['50%', '50%', '20%']}>
-						<Image height={'40px'} src={`${assetsUrl}/partners/dojima.svg`} />
+						<Image
+							cursor={'pointer'}
+							onClick={() =>
+								window.open('https://www.dojima.network/', '_self')
+							}
+							height={'40px'}
+							src={`${assetsUrl}/partners/dojima.svg`}
+						/>
 					</Flex>
 					<Flex
 						p={7}
 						borderRight={['none', 'none', '1px solid #4A4A4A']}
 						justifyContent={'center'}
 						w={['50%', '50%', '20%']}>
-						<Image height={'40px'} src={`${assetsUrl}/partners/ghaf.png`} />
+						<Image
+							cursor={'pointer'}
+							onClick={() => window.open('https://ghaflabs.ae/', '_self')}
+							height={'40px'}
+							src={`${assetsUrl}/partners/ghaf.png`}
+						/>
 					</Flex>
 					<Flex
 						borderTop={['1px solid #4A4A4A', '1px solid #4A4A4A', 'none']}
@@ -121,7 +141,12 @@ export const PartnerList: React.FC = () => {
 						borderRight={'1px solid #4A4A4A'}
 						justifyContent={'center'}
 						w={['50%', '50%', '20%']}>
-						<Image height={'40px'} src={`${assetsUrl}/partners/boba.svg`} />
+						<Image
+							cursor={'pointer'}
+							onClick={() => window.open('https://boba.network/', '_self')}
+							height={'40px'}
+							src={`${assetsUrl}/partners/boba.svg`}
+						/>
 					</Flex>
 					<Flex
 						borderTop={['1px solid #4A4A4A', '1px solid #4A4A4A', 'none']}
@@ -129,14 +154,24 @@ export const PartnerList: React.FC = () => {
 						borderRight={'1px solid #4A4A4A'}
 						justifyContent={'center'}
 						w={['50%', '50%', '20%']}>
-						<Image height={'40px'} src={`${assetsUrl}/partners/nadmah.png`} />
+						<Image
+							cursor={'pointer'}
+							onClick={() => window.open('https://nadmah.co/', '_self')}
+							height={'40px'}
+							src={`${assetsUrl}/partners/nadmah.png`}
+						/>
 					</Flex>
 					<Flex
 						borderTop={['1px solid #4A4A4A', '1px solid #4A4A4A', 'none']}
 						p={7}
 						justifyContent={'center'}
 						w={['50%', '50%', '20%']}>
-						<Image height={'40px'} src={`${assetsUrl}/partners/panoray.png`} />
+						<Image
+							cursor={'pointer'}
+							onClick={() => window.open('https://www.panoray.com/', '_self')}
+							height={'40px'}
+							src={`${assetsUrl}/partners/panoray.png`}
+						/>
 					</Flex>
 				</HStack>
 			</VStack>
@@ -164,6 +199,8 @@ export const PartnerList: React.FC = () => {
 						justifyContent={'center'}
 						w={['50%', '50%', '25%']}>
 						<Image
+							cursor={'pointer'}
+							onClick={() => window.open('https://sales-and-ads.com/', '_self')}
 							height={'40px'}
 							src={`${assetsUrl}/partners/saladlabs.png`}
 						/>
@@ -173,7 +210,12 @@ export const PartnerList: React.FC = () => {
 						borderRight={['none', 'none', '1px solid #4A4A4A']}
 						justifyContent={'center'}
 						w={['50%', '50%', '25%']}>
-						<Image height={'70px'} src={`${assetsUrl}/partners/web3_tv.svg`} />
+						<Image
+							cursor={'pointer'}
+							onClick={() => window.open('https://web3.tv/', '_self')}
+							height={'70px'}
+							src={`${assetsUrl}/partners/web3_tv.svg`}
+						/>
 					</Flex>
 					<Flex
 						p={2}
@@ -181,6 +223,8 @@ export const PartnerList: React.FC = () => {
 						justifyContent={'center'}
 						w={['50%', '50%', '25%']}>
 						<Image
+							cursor={'pointer'}
+							onClick={() => window.open('https://surgesocials.com/', '_self')}
 							height={'70px'}
 							src={`${assetsUrl}/partners/surge_socials.svg`}
 						/>
@@ -192,6 +236,10 @@ export const PartnerList: React.FC = () => {
 						justifyContent={'center'}
 						w={['50%', '50%', '25%']}>
 						<Image
+							cursor={'pointer'}
+							onClick={() =>
+								window.open('https://twitter.com/TradersBrawlDXB', '_self')
+							}
 							height={'50px'}
 							src={`${assetsUrl}/partners/traders_brawl.png`}
 						/>
@@ -213,6 +261,8 @@ export const PartnerList: React.FC = () => {
 						justifyContent={'center'}
 						w={['100%', '33.33%']}>
 						<Image
+							cursor={'pointer'}
+							onClick={() => window.open('', '_self')}
 							height={'60px'}
 							src={`${assetsUrl}/partners/cryptoken_media.svg`}
 						/>
@@ -223,6 +273,8 @@ export const PartnerList: React.FC = () => {
 						justifyContent={'center'}
 						w={['100%', '33.33%']}>
 						<Image
+							cursor={'pointer'}
+							onClick={() => window.open('https://cryptoken.media/', '_self')}
 							height={'60px'}
 							src={`${assetsUrl}/partners/coin_pedia.svg`}
 						/>
@@ -233,6 +285,8 @@ export const PartnerList: React.FC = () => {
 						justifyContent={'center'}
 						w={['100%', '33.33%']}>
 						<Image
+							cursor={'pointer'}
+							onClick={() => window.open('https://thenewscrypto.com/', '_self')}
 							height={'60px'}
 							src={`${assetsUrl}/partners/news_crypto.svg`}
 						/>
@@ -263,7 +317,12 @@ export const PartnerList: React.FC = () => {
 						borderRight={'1px solid #4A4A4A'}
 						justifyContent={'center'}
 						w={['100%', '33.33%']}>
-						<Image height={'60px'} src={`${assetsUrl}/partners/suci.svg`} />
+						<Image
+							cursor={'pointer'}
+							onClick={() => window.open('https://www.suci.io/', '_self')}
+							height={'60px'}
+							src={`${assetsUrl}/partners/suci.svg`}
+						/>
 					</Flex>
 					<Flex
 						p={7}
@@ -272,6 +331,8 @@ export const PartnerList: React.FC = () => {
 						justifyContent={'center'}
 						w={['100%', '33.33%']}>
 						<Image
+							cursor={'pointer'}
+							onClick={() => window.open('https://www.actualone.xyz/', '_self')}
 							height={'50px'}
 							src={`${assetsUrl}/partners/actual_one.svg`}
 						/>
@@ -283,6 +344,10 @@ export const PartnerList: React.FC = () => {
 						justifyContent={'center'}
 						w={['100%', '33.33%']}>
 						<Image
+							cursor={'pointer'}
+							onClick={() =>
+								window.open('https://www.blockchainedindia.com/', '_self')
+							}
 							height={'40px'}
 							src={`${assetsUrl}/partners/blockchained.svg`}
 						/>
@@ -304,6 +369,8 @@ export const PartnerList: React.FC = () => {
 					border='1px solid #4A4A4A'>
 					<Flex p={[5, 5, 7]} justifyContent={'center'} w='50%'>
 						<Image
+							cursor={'pointer'}
+							onClick={() => window.open('https://zexprwire.com/', '_self')}
 							height={'40px'}
 							src={`${assetsUrl}/partners/zex_pr_wire.svg`}
 						/>
