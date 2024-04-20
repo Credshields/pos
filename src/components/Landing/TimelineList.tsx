@@ -25,19 +25,21 @@ const timeline = [
 		number: '3',
 		time: '15:45PM - 16:15PM',
 		heading: 'Fireside Chat I  ',
-		subHeading: '',
+		subHeading: 'Vugar (COO, Bitget), Mary Pedler (Founder, INPUT Comms)',
 	},
 	{
 		number: '4',
 		time: '16:15PM - 16:45PM',
 		heading: 'Fireside Chat II',
-		subHeading: '',
+		subHeading:
+			'Thomas (Co-founder, Nadmah), Harly (Managing Partner, Neo Legal), AJ (Nordek)',
 	},
 	{
 		number: '6',
 		time: '16:45PM - 17:30PM',
 		heading: 'Panel Discussion',
-		subHeading: '',
+		subHeading:
+			'Anirudh (Head of Growth, Etherspot), Shashank (Co-Founder and CEO, CredShields), Igor (Hacken), Mudit Gupta (Polygon), Mohamed (Japan Open Chain),',
 	},
 	{
 		number: '7',
